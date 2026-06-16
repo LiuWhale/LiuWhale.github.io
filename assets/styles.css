@@ -114,16 +114,15 @@ a:focus-visible {
 }
 
 .hero-media {
-  background-image: url("images/dwm_thinks.webp");
+  background-image: url("images/smart_sliding_manifold.webp");
   background-position: center;
   background-size: cover;
-  transform: scale(1.02);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(11, 25, 24, 0.92), rgba(15, 61, 62, 0.78) 48%, rgba(15, 61, 62, 0.3)),
-    linear-gradient(0deg, rgba(11, 25, 24, 0.22), rgba(11, 25, 24, 0.12));
+    linear-gradient(90deg, rgba(11, 25, 24, 0.92), rgba(15, 61, 62, 0.72) 42%, rgba(15, 61, 62, 0.12) 76%),
+    linear-gradient(0deg, rgba(11, 25, 24, 0.1), rgba(11, 25, 24, 0.04));
 }
 
 .hero-content {
