@@ -24,9 +24,10 @@
         </span>
       </a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#bio">Bio</a>
+        <a href="#bio">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -55,63 +56,67 @@
         </div>
       </section>
 
-      <section class="research-strip" aria-label="Research focus">
-        <span>Safe robot learning</span>
-        <span>World-model risk prediction</span>
-        <span>Runtime safety filtering</span>
-        <span>Trustworthy embodied AI</span>
-      </section>
-
-      <section class="featured-work" aria-labelledby="featured-title">
-        <div class="featured-copy">
-          <p class="section-kicker">Featured Work</p>
-          <h2 id="featured-title">SMART: Sliding Manifold Action Rectification Technique</h2>
-          <p>
-            A sampled-data action-rectification framework that uses a
-            slack-augmented manifold, residual reaching laws, and closed-form
-            projected correction to shape recovery behavior in safe
-            reinforcement learning.
-          </p>
-          <a class="inline-link" href="#publications">View publications</a>
-        </div>
-        <figure class="featured-figure">
-          <img src="assets/images/smart_sliding_manifold.webp" alt="SMART framework figure showing residual-driven action rectification and sliding manifold recovery">
-          <figcaption>SMART framework figure from the accepted TII manuscript.</figcaption>
-        </figure>
-      </section>
-
-      <section id="bio" class="section two-column">
-        <div>
+      <section id="bio" class="section academic-profile">
+        <div class="profile-main">
           <p class="section-kicker">Biography</p>
           <h2>Researcher at the intersection of control, learning, and embodied AI.</h2>
+          <div class="prose">
+            <p>
+              Jingyu Liu is a Ph.D. student in Electronic Information at the
+              School of Automation, Southeast University, advised by Prof.
+              Changyin Sun. Since October 2025, he has been a jointly trained
+              doctoral researcher in the School of Vehicle and Mobility at
+              Tsinghua University with Prof. Shengbo Eben Li's team. From March
+              to August 2025, he was a visiting student at the Robotics
+              Department of Mohamed bin Zayed University of Artificial
+              Intelligence, advised by Dr. Anqing Duan.
+            </p>
+            <p>
+              His research focuses on safe robot learning and trustworthy
+              embodied intelligence. He studies how robots can predict risk,
+              revise actions, and execute policies under uncertainty, using
+              tools such as diffusion world models, Langevin dynamics, robust
+              invariant kernels, sliding manifold action rectification, and
+              runtime safety filtering for vision-language-action systems.
+            </p>
+            <p>
+              Before joining Southeast University, he received his M.S. and B.S.
+              degrees from the School of Automation and School of Artificial
+              Intelligence at Nanjing University of Posts and Telecommunications.
+              He also worked as a general software development engineer at Huawei
+              Technologies in Nanjing, where he contributed to large-scale
+              intelligent video analysis systems and data-processing modules.
+            </p>
+          </div>
         </div>
-        <div class="prose">
-          <p>
-            Jingyu Liu is a Ph.D. student in Electronic Information at the School
-            of Automation, Southeast University, advised by Prof. Changyin Sun.
-            Since October 2025, he has been a jointly trained doctoral researcher
-            in the School of Vehicle and Mobility at Tsinghua University with
-            Prof. Shengbo Eben Li's team. From March to August 2025, he was a
-            visiting student at the Robotics Department of Mohamed bin Zayed
-            University of Artificial Intelligence, advised by Dr. Anqing Duan.
-          </p>
-          <p>
-            His research focuses on safe robot learning and trustworthy embodied
-            intelligence. He studies how robots can predict risk, revise actions,
-            and execute policies under uncertainty, using tools such as diffusion
-            world models, Langevin dynamics, robust invariant kernels, sliding
-            manifold action rectification, and runtime safety filtering for
-            vision-language-action systems.
-          </p>
-          <p>
-            Before joining Southeast University, he received his M.S. and B.S.
-            degrees from the School of Automation and School of Artificial
-            Intelligence at Nanjing University of Posts and Telecommunications.
-            He also worked as a general software development engineer at Huawei
-            Technologies in Nanjing, where he contributed to large-scale
-            intelligent video analysis systems and data-processing modules.
-          </p>
-        </div>
+        <aside class="profile-side" aria-label="Research interests and education">
+          <section class="profile-panel">
+            <h3>Research Interests</h3>
+            <ul class="interest-list">
+              <li>Safe robot learning</li>
+              <li>World-model risk prediction</li>
+              <li>Runtime safety filtering</li>
+              <li>Trustworthy embodied AI</li>
+            </ul>
+          </section>
+          <section class="profile-panel">
+            <h3>Education</h3>
+            <ol class="education-list">
+              <li>
+                <time>2023 - Present</time>
+                <span>Ph.D. student, Southeast University</span>
+              </li>
+              <li>
+                <time>2025 - Present</time>
+                <span>Joint Ph.D. researcher, Tsinghua University</span>
+              </li>
+              <li>
+                <time>2015 - 2022</time>
+                <span>B.S. and M.S., NJUPT</span>
+              </li>
+            </ol>
+          </section>
+        </aside>
       </section>
 
       <section id="research" class="section">
@@ -176,8 +181,11 @@
             <span class="pub-status published">Published</span>
             <p>Zuxing Lu, Xin Yuan, Shaowen Yang, <strong>Jingyu Liu</strong>, and Changyin Sun. GSFF-SLAM: 3D Semantic Gaussian Splatting SLAM via Feature Field. <strong class="journal"><em>Expert Systems with Applications</em></strong>, Article 12960, 2025.</p>
           </li>
-          <li>
+          <li class="with-thumbnail">
             <span class="pub-status accepted">Accepted</span>
+            <figure class="pub-thumb">
+              <img src="assets/images/smart_sliding_manifold.webp" alt="SMART framework thumbnail">
+            </figure>
             <p><strong>Jingyu Liu</strong>, Yuanda Wang, Anqing Duan, Zewen He, Yoshihiko Nakamura, and Changyin Sun. SMART: Sliding Manifold Action Rectification Technique for Safe Reinforcement Learning. <strong class="journal"><em>IEEE Transactions on Industrial Informatics</em></strong>, 2026.</p>
           </li>
           <li>
@@ -203,12 +211,12 @@
         </ol>
       </section>
 
-      <section class="section two-column">
+      <section id="experience" class="section two-column">
         <div>
-          <p class="section-kicker">Education and Experience</p>
-          <h2>Academic training with systems engineering experience.</h2>
+          <p class="section-kicker">Experience</p>
+          <h2>Academic visits and systems engineering experience.</h2>
         </div>
-        <div class="timeline" aria-label="Education and professional timeline">
+        <div class="timeline" aria-label="Academic and professional timeline">
           <div class="timeline-item">
             <time>2023 - Present</time>
             <strong>Southeast University</strong>
@@ -223,11 +231,6 @@
             <time>2025</time>
             <strong>Mohamed bin Zayed University of Artificial Intelligence</strong>
             <span>Visiting student, Robotics Department. Advisor: Dr. Anqing Duan.</span>
-          </div>
-          <div class="timeline-item">
-            <time>2015 - 2022</time>
-            <strong>Nanjing University of Posts and Telecommunications</strong>
-            <span>B.S. in Automation and M.S. in Control Science and Engineering.</span>
           </div>
           <div class="timeline-item">
             <time>2022 - 2023</time>
