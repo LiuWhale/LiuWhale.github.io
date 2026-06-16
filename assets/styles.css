@@ -402,30 +402,6 @@ a:focus-visible {
   color: #34413c;
 }
 
-.publication-list li.with-thumbnail {
-  grid-template-columns: 54px 118px minmax(128px, 170px) minmax(0, 1fr);
-}
-
-.publication-list li.with-thumbnail p {
-  grid-column: 4;
-}
-
-.pub-thumb {
-  grid-column: 3;
-  margin: 0;
-  overflow: hidden;
-  align-self: start;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8fbf9;
-}
-
-.pub-thumb img {
-  width: 100%;
-  aspect-ratio: 2.1;
-  object-fit: contain;
-}
-
 .journal,
 .publication-list em {
   color: var(--teal-dark);
@@ -583,15 +559,9 @@ a:focus-visible {
 
   .publication-list li::before,
   .pub-status,
-  .pub-thumb,
   .publication-list p {
     display: block;
     margin: 0;
-  }
-
-  .pub-thumb {
-    margin: 10px 0 12px;
-    max-width: 280px;
   }
 
   .pub-status {
