@@ -28,93 +28,94 @@
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
+    <main id="top" class="academic-shell">
+      <aside class="profile-sidebar" aria-label="Jingyu Liu profile">
+        <section class="profile-card">
           <img class="profile-avatar" src="assets/images/jingyu-avatar.webp" alt="Jingyu Liu">
-          <p class="eyebrow">Ph.D. Researcher · Southeast University</p>
           <h1 id="hero-title">Jingyu Liu</h1>
           <p class="name-cn">刘景宇</p>
-          <p class="hero-lede">
-            Safe robot learning, world-model-driven risk prediction, and runtime
-            safety for trustworthy embodied AI.
-          </p>
-          <div class="hero-affiliations" aria-label="Current affiliations">
-            <span>School of Automation, Southeast University</span>
-            <span>Joint Ph.D. researcher, Tsinghua University</span>
-            <span>Visiting student, MBZUAI Robotics</span>
-          </div>
-          <div class="hero-actions" aria-label="Contact and profile links">
-            <a href="mailto:Jingyu.Liu@seu.edu.cn">Email</a>
+          <p class="profile-title">Ph.D. Researcher in Safe Robot Learning</p>
+          <div class="profile-rule" aria-hidden="true"></div>
+          <ul class="profile-facts" aria-label="Current affiliations">
+            <li>School of Automation, Southeast University</li>
+            <li>School of Vehicle and Mobility, Tsinghua University</li>
+            <li>Robotics Department, MBZUAI</li>
+          </ul>
+          <div class="profile-links" aria-label="Contact and profile links">
+            <a class="primary-action" href="mailto:Jingyu.Liu@seu.edu.cn">Email</a>
             <a href="https://scholar.google.com/citations?user=Sh7lu8EAAAAJ&amp;hl=zh-CN">Google Scholar</a>
             <a href="https://github.com/LiuWhale">GitHub</a>
           </div>
-        </div>
-      </section>
+        </section>
+        <nav class="side-index" aria-label="Page sections">
+          <a href="#bio"><span>01</span> Biography</a>
+          <a href="#research"><span>02</span> Research</a>
+          <a href="#publications"><span>03</span> Publications</a>
+          <a href="#experience"><span>04</span> Experience</a>
+          <a href="#education"><span>05</span> Education</a>
+          <a href="#contact"><span>06</span> Contact</a>
+        </nav>
+      </aside>
 
-      <section id="bio" class="section academic-profile">
-        <div class="profile-main">
-          <p class="section-kicker">Biography</p>
-          <h2>Researcher at the intersection of control, learning, and embodied AI.</h2>
-          <div class="prose">
-            <p>
-              Jingyu Liu is a Ph.D. student in Electronic Information at the
-              School of Automation, Southeast University, advised by Prof.
-              Changyin Sun. Since October 2025, he has been a jointly trained
-              doctoral researcher in the School of Vehicle and Mobility at
-              Tsinghua University with Prof. Shengbo Eben Li's team. From March
-              to August 2025, he was a visiting student at the Robotics
-              Department of Mohamed bin Zayed University of Artificial
-              Intelligence, advised by Dr. Anqing Duan.
-            </p>
-            <p>
-              His research focuses on safe robot learning and trustworthy
-              embodied intelligence. He studies how robots can predict risk,
-              revise actions, and execute policies under uncertainty, using
-              tools such as diffusion world models, Langevin dynamics, robust
-              invariant kernels, sliding manifold action rectification, and
-              runtime safety filtering for vision-language-action systems.
-            </p>
+      <div class="content-flow">
+        <section id="bio" class="content-panel about-panel" aria-labelledby="hero-title">
+          <div class="about-copy">
+            <p class="section-kicker">Biography</p>
+            <h2>Building safe, reliable robot learning systems for embodied AI.</h2>
+            <div class="prose">
+              <p>
+                Jingyu Liu is a Ph.D. student in Electronic Information at the
+                School of Automation, Southeast University, advised by Prof.
+                Changyin Sun. Since October 2025, he has been a jointly trained
+                doctoral researcher in the School of Vehicle and Mobility at
+                Tsinghua University with Prof. Shengbo Eben Li's team. From March
+                to August 2025, he was a visiting student at the Robotics
+                Department of Mohamed bin Zayed University of Artificial
+                Intelligence, advised by Dr. Anqing Duan.
+              </p>
+              <p>
+                His research focuses on safe robot learning and trustworthy
+                embodied intelligence. He studies how robots can predict risk,
+                revise actions, and execute policies under uncertainty, using
+                tools such as diffusion world models, Langevin dynamics, robust
+                invariant kernels, sliding manifold action rectification, and
+                runtime safety filtering for vision-language-action systems.
+              </p>
+            </div>
+            <dl class="profile-meta" aria-label="Academic profile summary">
+              <div>
+                <dt>Primary Area</dt>
+                <dd>Safe robot learning</dd>
+              </div>
+              <div>
+                <dt>Methods</dt>
+                <dd>World models, safety filters</dd>
+              </div>
+              <div>
+                <dt>Systems</dt>
+                <dd>Embodied AI, robotics</dd>
+              </div>
+            </dl>
           </div>
-        </div>
-        <aside class="profile-side" aria-label="Research interests and education">
-          <section class="profile-panel">
-            <h3>Research Interests</h3>
-            <ul class="interest-list">
-              <li>Safe robot learning</li>
-              <li>World-model risk prediction</li>
-              <li>Runtime safety filtering</li>
-              <li>Trustworthy embodied AI</li>
-            </ul>
-          </section>
-          <section class="profile-panel">
-            <h3>Education</h3>
-            <ol class="education-list">
-              <li>
-                <time>2023 - Present</time>
-                <span>Ph.D. in Electronic Information, Southeast University</span>
-              </li>
-              <li>
-                <time>2019 - 2022</time>
-                <span>M.S. in Control Science and Engineering, NJUPT</span>
-              </li>
-              <li>
-                <time>2015 - 2019</time>
-                <span>B.S. in Automation, NJUPT</span>
-              </li>
-            </ol>
-          </section>
-        </aside>
-      </section>
+        </section>
 
-      <section id="research" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Research Directions</p>
-          <h2>Safety mechanisms for robots that learn and act in the physical world.</h2>
+      <section id="research" class="content-panel">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Research Directions</p>
+            <h2>Safety mechanisms for robots that learn and act in the physical world.</h2>
+          </div>
+          <ul class="interest-list compact">
+            <li>Safe robot learning</li>
+            <li>World-model risk prediction</li>
+            <li>Runtime safety filtering</li>
+            <li>Trustworthy embodied AI</li>
+          </ul>
         </div>
         <div class="direction-grid">
           <article class="direction-card">
@@ -155,7 +156,7 @@
         </div>
       </section>
 
-      <section id="publications" class="section">
+      <section id="publications" class="content-panel">
         <div class="section-heading">
           <p class="section-kicker">Publications</p>
           <h2>Representative work in safe robot learning, embodied AI, and autonomous systems.</h2>
@@ -200,29 +201,52 @@
         </ol>
       </section>
 
-      <section id="experience" class="section two-column">
-        <div>
-          <p class="section-kicker">Experience</p>
-          <h2>Research visits and systems engineering experience.</h2>
-        </div>
-        <div class="timeline" aria-label="Academic and professional timeline">
-          <div class="timeline-item">
-            <time>2025 - Present</time>
-            <strong>Tsinghua University</strong>
-            <span>Joint Ph.D. researcher, School of Vehicle and Mobility. Advisor: Prof. Shengbo Eben Li.</span>
+      <div class="lower-grid">
+        <section id="experience" class="content-panel compact-panel">
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2>Research visits and systems engineering.</h2>
           </div>
-          <div class="timeline-item">
-            <time>2025</time>
-            <strong>Mohamed bin Zayed University of Artificial Intelligence</strong>
-            <span>Visiting student, Robotics Department. Advisor: Dr. Anqing Duan.</span>
+          <div class="timeline" aria-label="Academic and professional timeline">
+            <div class="timeline-item">
+              <time>2025 - Present</time>
+              <strong>Tsinghua University</strong>
+              <span>Joint Ph.D. researcher, School of Vehicle and Mobility. Advisor: Prof. Shengbo Eben Li.</span>
+            </div>
+            <div class="timeline-item">
+              <time>2025</time>
+              <strong>Mohamed bin Zayed University of Artificial Intelligence</strong>
+              <span>Visiting student, Robotics Department. Advisor: Dr. Anqing Duan.</span>
+            </div>
+            <div class="timeline-item">
+              <time>2022 - 2023</time>
+              <strong>Huawei Technologies</strong>
+              <span>General software development engineer, Nanjing.</span>
+            </div>
           </div>
-          <div class="timeline-item">
-            <time>2022 - 2023</time>
-            <strong>Huawei Technologies</strong>
-            <span>General software development engineer, Nanjing.</span>
+        </section>
+
+        <section id="education" class="content-panel compact-panel" aria-labelledby="education-title">
+          <div class="section-heading">
+            <p class="section-kicker">Education</p>
+            <h2 id="education-title">Academic training.</h2>
           </div>
-        </div>
-      </section>
+          <ol class="education-list">
+            <li>
+              <time>2023 - Present</time>
+              <span>Ph.D. in Electronic Information, Southeast University</span>
+            </li>
+            <li>
+              <time>2019 - 2022</time>
+              <span>M.S. in Control Science and Engineering, NJUPT</span>
+            </li>
+            <li>
+              <time>2015 - 2019</time>
+              <span>B.S. in Automation, NJUPT</span>
+            </li>
+          </ol>
+        </section>
+      </div>
 
       <section id="contact" class="contact-section" aria-labelledby="contact-title">
         <div>
@@ -237,11 +261,12 @@
           <a href="https://www.xiaohongshu.com/user/profile/6682c47200000000030320dc">RedNote</a>
         </div>
       </section>
+      </div>
     </main>
 
     <footer class="site-footer">
       <span>© 2026 Jingyu Liu</span>
-      <span>Academic homepage · Last updated June 2026</span>
+      <span>Academic homepage · Last updated July 2026</span>
     </footer>
   </body>
 </html>
