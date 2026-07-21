@@ -496,6 +496,20 @@ a:focus-visible {
   color: #303a36;
 }
 
+.publication-title {
+  color: #202926;
+  font-weight: 760;
+  text-decoration: underline;
+  text-decoration-color: rgba(10, 108, 104, 0.28);
+  text-underline-offset: 3px;
+}
+
+.publication-title:hover,
+.publication-title:focus-visible {
+  color: var(--teal-dark);
+  text-decoration-color: var(--teal);
+}
+
 .journal,
 .publication-list em {
   color: var(--teal-dark);
