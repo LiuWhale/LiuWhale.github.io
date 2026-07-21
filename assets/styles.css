@@ -475,15 +475,11 @@ a:focus-visible {
 .publication-list li {
   counter-increment: publication;
   display: grid;
-  grid-template-columns: 42px 108px minmax(0, 1fr);
+  grid-template-columns: 42px 108px minmax(0, 1fr) 40px;
   gap: 12px 16px;
   align-items: baseline;
   padding: 15px 0;
   border-bottom: 1px solid var(--line);
-}
-
-.publication-list li.has-resource {
-  grid-template-columns: 42px 108px minmax(0, 1fr) 36px;
 }
 
 .publication-list li::before {
@@ -519,9 +515,10 @@ a:focus-visible {
   grid-column: 4;
   place-items: center;
   justify-self: end;
-  align-self: center;
+  align-self: start;
   width: 32px;
   height: 32px;
+  margin-top: 1px;
   border: 1px solid rgba(10, 108, 104, 0.32);
   border-radius: 8px;
   color: var(--teal-dark);
@@ -769,25 +766,38 @@ a:focus-visible {
   }
 
   .publication-list li {
-    display: block;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 8px 12px;
     padding: 16px 0;
   }
 
-  .publication-list li::before,
-  .pub-status,
-  .publication-resource,
-  .publication-list p {
-    display: block;
+  .publication-list li.has-resource {
+    grid-template-columns: 42px minmax(0, 1fr) 38px;
+  }
+
+  .publication-list li::before {
+    grid-column: 1;
+    grid-row: 1;
     margin: 0;
   }
 
   .pub-status {
+    grid-column: 2;
+    grid-row: 1;
     width: max-content;
-    margin: 8px 0 12px;
+    margin: 0;
+  }
+
+  .publication-list p {
+    grid-column: 1 / -1;
+    margin: 0;
   }
 
   .publication-resource {
+    grid-column: 3;
+    grid-row: 1;
     display: inline-grid;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
