@@ -482,6 +482,10 @@ a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.publication-list li.has-resource {
+  grid-template-columns: 42px 108px minmax(0, 1fr) 36px;
+}
+
 .publication-list li::before {
   content: counter(publication, decimal-leading-zero);
   grid-column: 1;
@@ -508,6 +512,32 @@ a:focus-visible {
 .publication-title:focus-visible {
   color: var(--teal-dark);
   text-decoration-color: var(--teal);
+}
+
+.publication-resource {
+  display: inline-grid;
+  grid-column: 4;
+  place-items: center;
+  justify-self: end;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(10, 108, 104, 0.32);
+  border-radius: 8px;
+  color: var(--teal-dark);
+  background: rgba(10, 108, 104, 0.07);
+}
+
+.publication-resource:hover,
+.publication-resource:focus-visible {
+  color: var(--surface);
+  background: var(--teal-dark);
+}
+
+.publication-resource svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .journal,
@@ -745,6 +775,7 @@ a:focus-visible {
 
   .publication-list li::before,
   .pub-status,
+  .publication-resource,
   .publication-list p {
     display: block;
     margin: 0;
@@ -753,5 +784,10 @@ a:focus-visible {
   .pub-status {
     width: max-content;
     margin: 8px 0 12px;
+  }
+
+  .publication-resource {
+    display: inline-grid;
+    margin-top: 10px;
   }
 }
